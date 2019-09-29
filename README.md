@@ -18,6 +18,7 @@ Exercises and notes from exercises on various coding challenge services.
     - difficulty-ranked challenges
 - [Hacker Rank (A, DS, RW)](https://www.hackerrank.com)
     - interview preparation
+    - [Project Euler exercises](https://www.hackerrank.com/contests/projecteuler/challenges)
     - [AI exercises](https://www.hackerrank.com/domains/ai)
     - [bash exercises](https://www.hackerrank.com/domains/shell)
     - [SQL exercises](https://www.hackerrank.com/domains/sql)
