@@ -23,12 +23,13 @@ Exercises and notes from exercises on various coding challenge services.
     - [bash exercises](https://www.hackerrank.com/domains/shell)
     - [SQL exercises](https://www.hackerrank.com/domains/sql)
     - [lambda calculus exercises](https://www.hackerrank.com/domains/fp)
-- [CodinGame](https://www.codingame.com/training)
+- [CodinGame (A, DS)](https://www.codingame.com/training)
 - [TestDome (RW)](https://www.testdome.com/tests)
 - [Exercism (A, DS, RW)](https://exercism.io)
     - challenges with libraries
 - [GeekTastic (A)](https://geektastic.com/developers)
     - paid reviews of coding solutions
+- [DevSkiller (RW)](https://devskiller.com/coding-tests/)
 
 #### Key
 
