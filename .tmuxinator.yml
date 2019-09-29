@@ -1,0 +1,9 @@
+name: coding-challenges
+root: <%= Dir.pwd %>
+
+windows:
+  - frontend:
+      layout: main-vertical
+      panes:
+        - vim
+        -

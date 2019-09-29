@@ -1,0 +1,25 @@
+{
+  "name": "coding-challenge-solutions",
+  "version": "1.0.0",
+  "description": "Exercises and notes from various coding challenges",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/larrybotha/coding-challenge-solutions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/larrybotha/coding-challenge-solutions/issues"
+  },
+  "homepage": "https://github.com/larrybotha/coding-challenge-solutions#readme",
+  "devDependencies": {
+    "doctoc": "^1.4.0",
+    "husky": "^3.0.7",
+    "lint-staged": "^9.4.0"
+  }
+}
