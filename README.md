@@ -17,9 +17,11 @@ Exercises and notes from exercises on various coding challenge services.
 - [CodeWars (A, DS)](https://www.codewars.com)
     - difficulty-ranked challenges
 - [Hacker Rank (A, DS, RW)](https://www.hackerrank.com)
-    - bash exercises
-    - SQL exercises
-    - lambda calculus exercises
+    - interview preparation
+    - [AI exercises](https://www.hackerrank.com/domains/ai)
+    - [bash exercises](https://www.hackerrank.com/domains/shell)
+    - [SQL exercises](https://www.hackerrank.com/domains/sql)
+    - [lambda calculus exercises](https://www.hackerrank.com/domains/fp)
 - [TestDome (RW)](https://www.testdome.com/tests)
 - [Exercism (A, DS, RW)](https://exercism.io)
     - challenges with libraries
