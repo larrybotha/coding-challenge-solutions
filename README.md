@@ -6,12 +6,17 @@ Exercises and notes from exercises on various coding challenge services.
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
+- [Hacker Rank](#hacker-rank)
 - [Code Challenge Services](#code-challenge-services)
   - [Key](#key)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-### Code Challenge Services
+## Hacker Rank
+
+[README.md](hacker-rank/README.md)
+
+## Code Challenge Services
 
 - [Codility (A, DS)](https://app.codility.com/programmers/)
 - [CodeWars (A, DS)](https://www.codewars.com)
@@ -31,7 +36,7 @@ Exercises and notes from exercises on various coding challenge services.
     - paid reviews of coding solutions
 - [DevSkiller (RW)](https://devskiller.com/coding-tests/)
 
-#### Key
+### Key
 
 - A - algorithmic problems
 - DS - data structures
