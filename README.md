@@ -6,15 +6,27 @@ Exercises and notes from exercises on various coding challenge services.
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [Hacker Rank](#hacker-rank)
+- [Exercises](#exercises)
+- [Notes](#notes)
+  - [Running tests](#running-tests)
 - [Code Challenge Services](#code-challenge-services)
   - [Key](#key)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## Hacker Rank
+## Exercises
 
-[README.md](hacker-rank/README.md)
+- [Hacker Rank](hacker-rank/README.md)
+
+## Notes
+
+### Running tests
+
+To watch and execute TypeScript files:
+
+```bash
+$ npm run watch:test:ts -- path/to/test.ts
+```
 
 ## Code Challenge Services
 
