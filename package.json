@@ -4,7 +4,7 @@
   "description": "Exercises and notes from various coding challenges",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch:test:ts": "nodemon --exec ts-node"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,11 @@
   "devDependencies": {
     "doctoc": "^1.4.0",
     "husky": "^3.0.7",
-    "lint-staged": "^9.4.0"
+    "lint-staged": "^9.4.0",
+    "typescript": "^3.6.3"
+  },
+  "dependencies": {
+    "fast-check": "^1.17.0",
+    "ts-node": "^8.4.1"
   }
 }
