@@ -7,6 +7,7 @@
 - [Solve Me First](#solve-me-first)
 - [Simple Array Sum](#simple-array-sum)
 - [A Very Big Sum](#a-very-big-sum)
+- [Diagonal Difference](#diagonal-difference)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -21,3 +22,7 @@
 ## A Very Big Sum
 
 [index.ts](a-very-big-sum/index.ts)
+
+## Diagonal Difference
+
+[index.ts](diagonal-difference/index.ts)
