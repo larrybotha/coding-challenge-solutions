@@ -48,6 +48,7 @@ $ npm run watch:test:ts -- path/to/test.ts
 - [GeekTastic (A)](https://geektastic.com/developers)
     - paid reviews of coding solutions
 - [DevSkiller (RW)](https://devskiller.com/coding-tests/)
+- [Advent of Code (RW)](https://adventofcode.com/)
 
 ### Key
 
