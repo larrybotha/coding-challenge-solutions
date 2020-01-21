@@ -14,18 +14,36 @@ func check(e error) {
 }
 
 func main() {
+	/**
+	 * get command line args... from index 1?
+	 */
 	inputFilename := os.Args[1:][0]
-	fmt.Print(inputFilename)
-
 	dirname, err := os.Getwd()
 	check(err)
-
-	fmt.Print(dirname)
-
 	absFilePath := filepath.Join(dirname, inputFilename)
 
+	/**
+	 * get a []byte of the file contents
+	 */
 	dat, err := ioutil.ReadFile(absFilePath)
 	check(err)
 
-	fmt.Print(dat)
+	/**
+	 * we can parse the []byte to a string
+	 */
+	fmt.Print(string(dat))
+
+	count := 0
+
+	for _, c := range string(dat) {
+		if c == '(' {
+			count++
+		}
+
+		if c == ')' {
+			count--
+		}
+	}
+
+	fmt.Printf("Floor: %d\n", count)
 }
