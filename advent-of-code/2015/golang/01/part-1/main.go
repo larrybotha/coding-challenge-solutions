@@ -31,7 +31,7 @@ func main() {
 	/**
 	 * we can parse the []byte to a string
 	 */
-	fmt.Print(string(dat))
+	// fmt.Print(string(dat))
 
 	count := 0
 
