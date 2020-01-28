@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+	"io/ioutil"
+	"log"
 	"os"
 	"path"
 )
@@ -14,7 +16,7 @@ import (
 func handleErr(err error) {
 	// check for errors using nil
 	if err != nil {
-		panic(err)
+		log.Fatal(err)
 	}
 }
 
@@ -25,5 +27,32 @@ func main() {
 
 	absFilePath := path.Join(dir, inputFilename)
 
-	fmt.Println(absFilePath)
+	// open file
+	data, err := ioutil.ReadFile(absFilePath)
+
+	/**
+	 * instead of using fmt.Println(string(data)), fmt.Printf will interpret data as a string
+	 */
+	// fmt.Println(data)
+	fmt.Printf("data: %s", data)
+
+	handleErr(err)
+
+	floor := 0
+	pos := 0
+
+	for i, v := range data {
+		if v == ')' {
+			floor--
+		} else if v == '(' {
+			floor++
+		}
+
+		if floor == -1 {
+			pos = i + 1
+			break
+		}
+	}
+
+	fmt.Printf("pos: %d\n", pos)
 }
