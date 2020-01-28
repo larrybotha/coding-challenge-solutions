@@ -23,6 +23,12 @@ $ nodemon -w ./01/part-2/main.go --exec 'go run ./01/part-2/main.go ../01.txt ||
 
 ### Lessons
 
+- to slice a slice or array, use `xs[start:end]`.
+- one gets arguments passed to the process via `os.Args` - this is like
+    `process.env` in Node
+- to get the current working directory, i.e. the directory in which the
+    executable lies, we use `os.getWd()`
+- to join paths one uses `path.Join(path1, path2, [...])`
 - `io/ioutil` is useful for reading in file data
 - `ioutil.ReadFile` returns a byte array - attempting to write it straight out
     may not be meaningful
