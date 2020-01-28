@@ -46,9 +46,9 @@ $ nodemon -w ./01/part-2/main.go --exec 'go run ./01/part-2/main.go ../01.txt ||
 
 ```bash
 # part 2
-$ nodemon -w ./02/part-1/main.go --exec 'go run ./02/part-1/main.go ../01.txt || exit 1'
+$ nodemon -w ./02/part-1/main.go --exec 'go run ./02/part-1/main.go ../02.txt || exit 1'
 
 # part 2
-$ nodemon -w ./02/part-2/main.go --exec 'go run ./02/part-2/main.go ../01.txt || exit 1'
+$ nodemon -w ./02/part-2/main.go --exec 'go run ./02/part-2/main.go ../02.txt || exit 1'
 ```
 
