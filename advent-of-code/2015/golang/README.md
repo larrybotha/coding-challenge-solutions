@@ -13,9 +13,9 @@
 
 ```bash
 # part 1
-$ nodemon -w ./01.part1.awk --exec awk -f ./01.part1.awk ../../../01.txt
+$ nodemon -w ./01/part-1/main.go --exec 'go run ./01/part-1/main.go ../01.txt || exit 1'
 
 # part 2
-$ nodemon -w ./01.part2.awk --exec awk -f ./01.part2.awk ../../../01.txt
+$ nodemon -w ./01/part-2/main.go --exec 'go run ./01/part-2/main.go ../01.txt || exit 1'
 ```
 
