@@ -28,10 +28,11 @@ $ nodemon -w ./01/part-2/main.go --exec 'go run ./01/part-2/main.go ../01.txt ||
     `process.env` in Node
 - to get the current working directory, i.e. the directory in which the
     executable lies, we use `os.getWd()`
-- to join paths one uses `path.Join(path1, path2, [...])`
+- to join paths one uses `path.Join(path1, path2, [...])`. This is like
+    `require(path.resolve(path1, path2))` in Node
 - `io/ioutil` is useful for reading in file data
 - `ioutil.ReadFile` returns a byte array - attempting to write it straight out
-    may not be meaningful
+    may not be meaningful. `ioutil.ReadFile` is similar to `fs.readFile` in Node
 - `string(myByteArray)` will format the byte array as a string
 - `fmt.Pintf("%s", myByteArray)` will format the byte array as a string without
     the additional `string` call
