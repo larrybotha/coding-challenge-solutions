@@ -6,6 +6,7 @@
 
 - [01](#01)
   - [Lessons](#lessons)
+- [02](#02)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -34,4 +35,14 @@ $ nodemon -w ./01/part-2/main.go --exec 'go run ./01/part-2/main.go ../01.txt ||
     - `panic(msg)` will exit once all deferred invocations have completed
         executing
 
+
+## 02
+
+```bash
+# part 2
+$ nodemon -w ./02/part-1/main.go --exec 'go run ./02/part-1/main.go ../01.txt || exit 1'
+
+# part 2
+$ nodemon -w ./02/part-2/main.go --exec 'go run ./02/part-2/main.go ../01.txt || exit 1'
+```
 
