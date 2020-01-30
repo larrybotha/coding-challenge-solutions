@@ -17,6 +17,10 @@ func handleErr(err error) {
 }
 
 func getDimStrings(str []byte) [][]byte {
+	/**
+	* see also
+	* strings.Split:https://yourbasic.org/golang/string-functions-reference-cheat-sheet/
+	 */
 	r, _ := regexp.Compile(`\w+`)
 	dims := r.FindAll(str, -1)
 
