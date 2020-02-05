@@ -49,14 +49,16 @@ func minInRange(xs []int) int {
 	}
 }
 
-func shortestSides(xs []int) []int {
+func getMins(xs []int, n int) []int {
 	sides := make([]int, 0)
+	// Go's "sort" package allows for sorting of various types
 	sort.Ints(xs)
 
 	for i := range xs {
+		// append returns a new slice, like [].concat in JS
 		sides = append(sides, minInRange(xs[i:]))
 
-		if len(sides) == 2 {
+		if len(sides) == n {
 			break
 		}
 	}
@@ -64,32 +66,29 @@ func shortestSides(xs []int) []int {
 	return sides
 }
 
-func sliceProduct(xs []int) int {
-	product := 1
+func product(xs []int) int {
+	total := 1
 
 	for _, x := range xs {
-		product *= x
+		total *= x
 	}
 
-	return product
+	return total
 }
 
 func ribbonLength(xs []int) int {
-	shortSides := shortestSides(xs)
+	shortSides := getMins(xs, 2)
 	length := sum(shortSides) * 2
-	bowLength := sliceProduct(xs)
+	bowLength := product(xs)
 
 	return length + bowLength
-}
-
-func split(str, match string) []string {
-	return strings.Split(str, match)
 }
 
 func strsToInt(xs []string) []int {
 	ints := make([]int, 0)
 
 	for _, x := range xs {
+		// to convert from alpha to int, use strconv.Atoi
 		n, _ := strconv.Atoi(x)
 		ints = append(ints, n)
 	}
@@ -109,16 +108,23 @@ func sum(xs []int) int {
 
 func main() {
 	data := getInputData()
-	/**
-	 * regular expressions don't use the /[expr]/ format in JS and PHP
-	 */
+	// regular expressions don't use the /[expr]/ format in JS and PHP
+	//
+	// regular expression patterns can be written using backticks, or double quotes.
+	// double-quotes are interpreted string literals, and characters such as backslashes
+	// need to be escaped
 
+	// rx := regexp.MustCompile("\\w+")
 	rx := regexp.MustCompile(`\w+`)
+
+	// Regex.FindAll requires an int value to determine where to stop searching
+	// -1 indicates search the entire string
 	lines := rx.FindAll(data, -1)
 	dims := make([][]int, 0)
 
 	for _, v := range lines {
-		giftDims := split(string(v), `x`)
+		// the "strings" package allows for string manipulation, such as splitting a string
+		giftDims := strings.Split(string(v), `x`)
 		intGiftDims := strsToInt(giftDims)
 		dims = append(dims, intGiftDims)
 	}
