@@ -64,6 +64,7 @@ $ nodemon -w ./02/part-2/main.go --exec 'go run ./02/part-2/main.go ../02.txt ||
     - start by defining your pattern using `regexp.Compile` or
         `regexp.MustCompile`, followed by using the resulting regular expression
         to perform a match
+        - this is like `new RegExp(/pattern/)` in Javascript
     - to find all occurrences in a string:
 
         ```golang
@@ -80,7 +81,9 @@ $ nodemon -w ./02/part-2/main.go --exec 'go run ./02/part-2/main.go ../02.txt ||
       ```golang
       words = strings.Split(str)
       ```
+    - `strings.Split` is like `String.prototype.split` in Javascript
 - use `strconv.Atoi` to parse integers from alphanumeric strings
+    - `strconv.Atoi` is similar to `parseInt` in Javascript
 - the `sort` package is useful for sorting slices of different types:
 
     ```golang
@@ -88,3 +91,6 @@ $ nodemon -w ./02/part-2/main.go --exec 'go run ./02/part-2/main.go ../02.txt ||
     // sorts and mutates xs
     sort.Ints(xs)
     ```
+
+    - `sort` is similar to `Array.prototype.sort` in Javascript, but with
+        explicitly typed functions
