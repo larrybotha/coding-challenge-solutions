@@ -7,6 +7,7 @@
 - [01](#01)
   - [Lessons](#lessons)
 - [02](#02)
+  - [Lessons](#lessons-1)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -53,3 +54,37 @@ $ nodemon -w ./02/part-1/main.go --exec 'go run ./02/part-1/main.go ../02.txt ||
 $ nodemon -w ./02/part-2/main.go --exec 'go run ./02/part-2/main.go ../02.txt || exit 1'
 ```
 
+### Lessons
+
+- `backticks` denote string literals, as they do in Javascript. There doesn't
+    seem to be string interpolation, however
+- "double-quotes" denote interpreted string literals. Special characters, such
+    as backslashes, need to be escaped
+- the `regexp` package allows for one to define regular expressions
+    - start by defining your pattern using `regexp.Compile` or
+        `regexp.MustCompile`, followed by using the resulting regular expression
+        to perform a match
+    - to find all occurrences in a string:
+
+        ```golang
+        newlineRx := regexp.MustCompile(`\n`)
+
+        // or
+        newlineRx := regexp.MustCompile("\\n")
+
+        matches := newlineRx.FindAll(str)
+        ```
+- the `strings` package allows for text manipulation, such as splitting a string
+    by a specific character:
+
+      ```golang
+      words = strings.Split(str)
+      ```
+- use `strconv.Atoi` to parse integers from alphanumeric strings
+- the `sort` package is useful for sorting slices of different types:
+
+    ```golang
+    xs := []int{3,2,1}
+    // sorts and mutates xs
+    sort.Ints(xs)
+    ```
