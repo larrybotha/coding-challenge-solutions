@@ -82,7 +82,7 @@ $ nodemon -w ./02/part-2/main.go --exec 'go run ./02/part-2/main.go ../02.txt ||
     ```golang
     words := strings.Split(str)
     ```
-      
+
     - `strings.Split` is like `String.prototype.split` in Javascript
 - use `strconv.Atoi` to parse integers from alphanumeric strings
     - `strconv.Atoi` is similar to `parseInt` in Javascript
