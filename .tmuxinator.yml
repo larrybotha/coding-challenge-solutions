@@ -6,4 +6,4 @@ windows:
       layout: main-vertical
       panes:
         - vim
-        -
+        - cd advent-of-code/2015/golang
