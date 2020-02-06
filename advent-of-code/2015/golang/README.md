@@ -8,6 +8,7 @@
   - [Lessons](#lessons)
 - [02](#02)
   - [Lessons](#lessons-1)
+- [03](#03)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -94,3 +95,10 @@ $ nodemon -w ./02/part-2/main.go --exec 'go run ./02/part-2/main.go ../02.txt ||
 
     - `sort` is similar to `Array.prototype.sort` in Javascript, but with
         explicitly typed functions
+
+## 03
+
+```bash
+# part 1
+$ nodemon -w ./03/part-1/main.go --exec 'go run ./03/part-1/main.go ../03.txt || exit 1'
+```
