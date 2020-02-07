@@ -32,4 +32,5 @@ func main() {
 	data := getFileData(inputFile)
 
 	fmt.Printf("%s\n", data)
+	fmt.Printf("%d\n", len(data))
 }
