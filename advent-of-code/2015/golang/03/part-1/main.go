@@ -6,6 +6,7 @@ import (
 	"log"
 	"os"
 	"path"
+	"strings"
 )
 
 func handleErr(err error) {
@@ -31,6 +32,6 @@ func main() {
 	inputFile := os.Args[1:][0]
 	data := getFileData(inputFile)
 
-	fmt.Printf("%s\n", data)
+	fmt.Printf("%v\n", strings.Split(string(data), ``))
 	fmt.Printf("%d\n", len(data))
 }
